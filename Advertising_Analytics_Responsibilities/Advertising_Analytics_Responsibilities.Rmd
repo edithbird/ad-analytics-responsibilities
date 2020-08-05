@@ -1,0 +1,28 @@
+---
+title: "Marketing Report"
+subtitle: "Office of Marketing and Brand Management"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+bibliography: skeleton.bib
+link-citations: yes
+---
+
+```{r fig.height=8, fig.width=8}
+library(knitr)
+library(png)
+```
+
+
+```{r}
+img1_path <- "C:/Users/christine.iyer/Box/FY21_Advertising/Advertising_Analytics_Responsibilities/Rplot.png"
+
+attr(img1_path, "info")
+```
+
+```{r fig.height=8, fig.width=8}
+# Small fig.width
+include_graphics(img1_path)
+```
+
+![](C:/Users/christine.iyer/Box/FY21_Advertising/Advertising_Analytics_Responsibilities/Rplot.png)
